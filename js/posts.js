@@ -1,6 +1,7 @@
 import * as functions from "./functions.js";
 
 document.addEventListener("DOMContentLoaded", async function () {
+  functions.logOut();
   axios.defaults.baseURL = "https://nt-devconnector.onrender.com/api/";
   let headers = {
     headers: {
@@ -10,7 +11,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   };
   let form = document.querySelector("form");
   let posts = document.querySelector(".posts");
-  functions.logOut(); 
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       });
     });
 
+    
   } catch (error) {
     console.error(error);
     functions.hideLoader();
