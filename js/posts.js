@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         functions.likePost(post_id, like_count);
       });
     });
-
     
   } catch (error) {
     console.error(error);
