@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 10
               )}/${element.to.slice(0, 4)}`;
 
-        return `
+        return ` 
           <div class="education my-5 border-bottom">
             <h4>${element.school}</h4>
             <p>${element.from.slice(5, 7)}/${element.from.slice(

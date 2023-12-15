@@ -98,7 +98,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       });
     });
 
-
     functions.go_to_profile(commentsSection, "../pages/profile.html");
 
   } catch (error) {

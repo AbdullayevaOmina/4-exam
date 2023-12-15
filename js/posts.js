@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   };
   let form = document.querySelector("form");
   let posts = document.querySelector(".posts");
-  functions.logOut();
+  functions.logOut(); 
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();

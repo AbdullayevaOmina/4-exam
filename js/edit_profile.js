@@ -1,5 +1,5 @@
 import * as functions from "./functions.js";
-
+ 
 document.addEventListener("DOMContentLoaded", async function () {
   functions.logOut();
   axios.defaults.baseURL = "https://nt-devconnector.onrender.com/api/";

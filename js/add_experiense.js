@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       form[5].disabled = true;
       form[5].value = "";
     }
-
+ 
     console.log(form[4].value);
 
     if (!jobtitle) return functions.createAlert("Job title is required");

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     let email = form[1].value.trim();
     let password = form[2].value.trim();
     let confirmPassword = form[3].value.trim();
-
+ 
     if (!fullName || !password || !email)
       return functions.createAlert("All fields are required!");
 

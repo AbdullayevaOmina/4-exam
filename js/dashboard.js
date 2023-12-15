@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.error("Profilni olishda xatolik yuz berdi:", error);
     functions.hideLoader();
   }
-
+ 
   if (!userData.data) {
     DashboardSection.innerHTML = `<p class="info">You have not yet setup a profile, please add some info</p>
         <a href="./create_profile.html">

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     },
   };
   let form = document.querySelector("form");
-
+ 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     let school = form[0].value.trim();
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       form[5].disabled = true;
       form[5].value = "";
     }
-    
+
     try {
       let { data } = await axios.put(
         "/profile/education",

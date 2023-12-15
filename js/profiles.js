@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (error) {
       console.error(error);
     }
-  }
-
+  } 
+ 
   try {
     functions.showLoader();
     const { data } = await axios.get("/profile");

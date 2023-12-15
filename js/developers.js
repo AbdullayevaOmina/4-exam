@@ -3,7 +3,7 @@ import * as functions from "./functions.js";
 document.addEventListener("DOMContentLoaded", async () => {
   axios.defaults.baseURL = "https://nt-devconnector.onrender.com/api/";
   const usersProfile = document.querySelector(".users");
-
+ 
   async function getUserProfile(userId) {
     try {
       const response = await axios.get(`/profile/user/${userId}`);

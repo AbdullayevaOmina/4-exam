@@ -8,7 +8,7 @@ let headers = {
 export function showLoader() {
   document.querySelector("#loader-container").style.display = "block";
 }
-
+ 
 export function hideLoader() {
   document.querySelector("#loader-container").style.display = "none";
 }

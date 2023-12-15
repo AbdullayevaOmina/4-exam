@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   let linksBtn = document.querySelector("#linksBtn");
   let logOutBtn = document.querySelector("#logout");
   let goBackBtn = document.querySelector("#goback");
-
+ 
   logOutBtn.addEventListener("click", () => {
     localStorage.removeItem("UserToken");
     window.location.replace("../pages/login.html");
