@@ -1,0 +1,7 @@
+.user img {
+  border-radius: 50%;
+  max-width: 220px;
+  min-width: 220px;
+  max-height: 220px;
+  min-height: 220px;
+}

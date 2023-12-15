@@ -1,0 +1,27 @@
+.showcase {
+  width: 100%;
+  background-color: rgb(13, 194, 194);
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.showcase img {
+  border-radius: 50%;
+  max-width: 320px;
+  min-width: 320px;
+  max-height: 320px;
+  min-height: 320px;
+}
+
+.nv {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  background-color: rgb(240, 247, 247);
+  width: 100%;
+}
+
+.bio, .skills-set {
+	text-align: center;
+}

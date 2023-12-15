@@ -1,0 +1,48 @@
+body {
+  background: url(../images/homePage-img.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 92lvh;
+}
+
+header {
+  background-color: rgba(5, 19, 19, 0.9);
+  border-bottom: 2px solid rgb(13, 214, 214);
+}
+
+.hover:hover {
+  color: rgb(13, 214, 214);
+}
+
+button {
+  background-color: rgb(13, 194, 194);
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 8px 1px  rgb(13, 194, 194);
+}
+
+.whiteBtn {
+  color: rgb(13, 194, 194);
+  background-color: white;
+}
+
+.loginBtn:hover {
+  box-shadow: 1px 1px 8px 1px white;
+}
+
+h1 {
+  font-size: 80px;
+}

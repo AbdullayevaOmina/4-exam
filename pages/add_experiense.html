@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      let token = localStorage.getItem("UserToken");
+      if (!token) window.location.replace("./login.html");
+    </script>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/create-profile.css" />
+    <!-- axios -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+      integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- bootstrap js-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <!-- js -->
+    <script defer type="module" src="../js/add_experiense.js"></script>
+    <title>Add experiense</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar mx-5">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="./dashboard.html">
+            <h3 class="hover">
+              <i class="fa-solid fa-code"></i>
+              DevConnector
+            </h3>
+          </a>
+
+          <ul class="d-flex text-white mt-2 gap-5">
+            <li class="list-unstyled">
+              <a class="nav-link hover" href="../pages/profiles.html"
+                >Developers</a
+              >
+            </li>
+
+            <li class="list-unstyled">
+              <a class="nav-link hover" href="../pages/posts.html">Posts</a>
+            </li>
+
+            <li class="list-unstyled">
+              <a class="nav-link hover" href="../pages/dashboard.html">
+                <i class="fa-solid fa-user"></i>
+                Dashboard
+              </a>
+            </li>
+
+            <li class="list-unstyled" id="logout">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Logout
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="alert-wrapper"></div>
+
+    <main class="container my-5">
+      <h1 class="fs mb-3 display-color">Add An Experience</h1>
+      <p class="text-dark fs-4">
+        Add any developer/programming positions that you have had in the past
+      </p>
+      <small class="">* = required field</small>
+
+      <form class="mt-4 d-grid gap-4">
+        <label for="jobTitle">
+          <input
+            id="jobTitle"
+            type="text"
+            placeholder="* Job Title"
+            class="form-control w-75"
+          />
+        </label>
+
+        <label for="company">
+          <input
+            id="company"
+            type="text"
+            placeholder="* Company"
+            class="form-control w-75"
+          />
+        </label>
+        <label for="location">
+          <input
+            id="location"
+            type="location"
+            placeholder="Location"
+            class="form-control w-75"
+          />
+        </label>
+
+        <label for="fromDate">
+          <h6>From Date</h6>
+          <input
+            type="date"
+            name="from"
+            id="fromDate"
+            class="form-control w-75"
+          />
+        </label>
+
+        <label for="chek">
+          <input type="checkbox" id="chek" name="current" value="false" class="checkbox" />
+          Current Job
+        </label>
+
+        <label for="toDate">
+          <h6>To Date</h6>
+          <input
+            type="date"
+            name="todate"
+            id="toDate"
+            class="form-control w-75"
+          />
+        </label>
+
+        <label for="jobDescription">
+          <textarea
+            id="jobDescription"
+            rows="3"
+            class="w-75 form-control"
+            placeholder="Job Description"
+          ></textarea>
+        </label>
+
+        <div class="d-flex gap-3">
+          <button type="submit">Submit</button>
+          <a href="./dashboard.html">
+            <button id="goback" class="whiteBtn border">Go Back</button>
+          </a>
+        </div>
+      </form>
+    </main>
+
+    <!-- bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
