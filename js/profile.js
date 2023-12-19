@@ -131,12 +131,12 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.log(data);
   } catch (error) {
     if (error.response && error.response.status === 400) {
-      // Xato kodni foydalanuvchiga ko'rsatish
+
       document.querySelector(
         ".user"
       ).innerHTML = `<h1>${error.response.data.msg}</h1>`;
     } else {
-      // Boshqa xatolar
+
       console.error(error);
       functions.createAlert("An error occurred", "error");
     }

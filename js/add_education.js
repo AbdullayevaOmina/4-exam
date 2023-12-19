@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       }, 1000);
     } catch (error) {
       console.error(error);
-      // Xatolikni brauzer konsolida chiqarish
+
       console.error(error.response.data.message);
       functions.createAlert("Error adding education", "error");
     }
